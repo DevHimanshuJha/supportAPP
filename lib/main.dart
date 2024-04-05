@@ -62,11 +62,22 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
+=======
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: Text('ChatBot ',style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white ),),
+      ) ,
+>>>>>>> fb5e41a (first commit)
       body: Container(
         decoration: BoxDecoration(
             image: DecorationImage(
                 colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.8), BlendMode.dstATop),
+<<<<<<< HEAD
                 image: NetworkImage(''),//online image retriver
+=======
+                image: NetworkImage('https://c4.wallpaperflare.com/wallpaper/765/999/824/portrait-display-vertical-artwork-digital-art-warrior-hd-wallpaper-preview.jpg'),//online image retriver
+>>>>>>> fb5e41a (first commit)
                 fit: BoxFit.cover
             )
         ),
@@ -86,13 +97,21 @@ class _ChatScreenState extends State<ChatScreen> {
                   Expanded(
                     flex: 15,
                     child: TextFormField(
+<<<<<<< HEAD
                       style: TextStyle(color: Colors.grey),
+=======
+                      style: TextStyle(color: Colors.white),
+>>>>>>> fb5e41a (first commit)
                       controller: _userInput,
                       decoration: InputDecoration(
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(15),
                           ),
+<<<<<<< HEAD
                           label: Text('Enter Your Message')
+=======
+                          label: Text('Enter Your Message',style: TextStyle(color: Colors.white),)
+>>>>>>> fb5e41a (first commit)
                       ),
                     ),
                   ),
@@ -102,7 +121,11 @@ class _ChatScreenState extends State<ChatScreen> {
                       iconSize: 30,
                       style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all(Colors.blue),
+<<<<<<< HEAD
                           foregroundColor: MaterialStateProperty.all(Colors.purpleAccent),
+=======
+                          foregroundColor: MaterialStateProperty.all(Colors.white),
+>>>>>>> fb5e41a (first commit)
                           shape: MaterialStateProperty.all(CircleBorder())
                       ),
                       onPressed: (){
@@ -151,7 +174,11 @@ class Messages extends StatelessWidget {
           right: isUser ? 10: 100
       ),
       decoration: BoxDecoration(
+<<<<<<< HEAD
           color: isUser ? Colors.blueAccent : Colors.grey.shade400,
+=======
+          color: isUser ? Colors.blueAccent : Colors.white,
+>>>>>>> fb5e41a (first commit)
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(10),
               bottomLeft: isUser ? Radius.circular(10): Radius.zero,
